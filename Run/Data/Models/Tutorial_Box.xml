@@ -1,0 +1,11 @@
+<StaticModelInfo
+	objFile = "Data/Models/Tutorial_Box.obj"
+	shader = "Data/Shaders/BlinnPhong.hlsl"
+	diffuseMap = "Data/Textures/Tutorial_Box_Diffuse.png"
+	normalMap = "Data/Textures/Tutorial_Box_Normal.png"
+	specGlossEmitMap = "Data/Textures/Tutorial_Box_SpecGlossEmit.png"
+	unitsPerMeter = "100"
+	x="left"
+	y="up"
+	z="forward"
+/>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{b1e606c5-3e18-431e-8795-9dce0eabf3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{164acfc2-7b9d-44e4-861f-b8b8ff463e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\GameModes">
+      <UniqueIdentifier>{2dbe86f3-ca71-4204-875c-0e110b1ecbe9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Windows.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameModeAnimationViewer.cpp">
+      <Filter>Framework\GameModes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameModeAttract.cpp">
+      <Filter>Framework\GameModes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameModeIK.cpp">
+      <Filter>Framework\GameModes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameModeThirdPerson.cpp">
+      <Filter>Framework\GameModes</Filter>
+    </ClCompile>
+    <ClCompile Include="Staircase.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBuildPreferences.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModeAnimationViewer.hpp">
+      <Filter>Framework\GameModes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModeAttract.hpp">
+      <Filter>Framework\GameModes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModeIK.hpp">
+      <Filter>Framework\GameModes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModeThirdPerson.hpp">
+      <Filter>Framework\GameModes</Filter>
+    </ClInclude>
+    <ClInclude Include="Staircase.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\Run\Data\Shaders\SkinningBlinnPhong.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Run\Data\Shaders\PCUTBNBlinnPhong.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

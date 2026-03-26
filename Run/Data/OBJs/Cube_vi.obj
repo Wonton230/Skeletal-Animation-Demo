@@ -1,0 +1,58 @@
+#------------------------------------------------------------------------------------------------
+# "Cube_vi.obj" test model by Squirrel Eiserloh
+#
+# Unit cube (from 0,0,0 to 1,1,1) test object
+# Simple indexed triangle vertexes format:
+#	- minimal vertexes (indexed optimally for maximum re-use)
+#	- explicit triangles (two per face), no quads or polys
+#	- no normals nor texCoords
+#	- already in engine orientation (x-forward, y-left, z-up) and scale (1.0 = 1m)
+
+#------------------------------------------------------------------------------------------------
+# Meta-Tags (ignored by all but my engine)
+#------------------------------------------------------------------------------------------------
+#SquirrelMeta orientation x=forward y=left z=up
+#SquirrelMeta scale unitsPerMeter=1
+
+#------------------------------------------------------------------------------------------------
+# VERTEX POSITIONS (v) IN FORMAT: x y z
+#------------------------------------------------------------------------------------------------
+# Bottom (-z) vertex positions (1-4)
+v 0 0 0
+v 0 1 0
+v 1 1 0
+v 1 0 0
+
+# Top (+z) vertex positions (5-8)
+v 0 0 1
+v 1 0 1
+v 1 1 1
+v 0 1 1
+
+#------------------------------------------------------------------------------------------------
+# TRIANGLE FACES (f) IN FORMAT: v1 v2 v3
+#------------------------------------------------------------------------------------------------
+# Bottom (-z) face vertex indexes
+f 1 2 3
+f 1 3 4
+
+# Top (+z) face vertex indexes
+f 5 6 7
+f 5 7 8
+
+# Front (+x) face vertex indexes
+f 4 3 7
+f 4 7 6
+
+# Back (-x) face vertex indexes
+f 1 5 8
+f 1 8 2
+
+# Left (+y) face vertex indexes
+f 2 8 7
+f 2 7 3
+
+# Right (-y) face vertex indexes
+f 1 4 6
+f 1 6 5
+
